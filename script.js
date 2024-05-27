@@ -2,7 +2,7 @@
 nextpage=1;
 previouspage=0
 function getNews(catagory,page){
-    const api = "pub_30647f724fbb0578f2d139ef3b083afedbde"
+    const api = "pub_45001483c1e510de6ecb848487e09eebae943"
     fetch("https://newsdata.io/api/1/news?apikey="+api+"&language=en&category="+catagory+"&page="+page).then((response)=>{
         return response.json();
     }).then((data)=>{
