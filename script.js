@@ -3,7 +3,7 @@ nextpage=1;
 previouspage=0
 function getNews(catagory,page){
     const api = "pub_45001483c1e510de6ecb848487e09eebae943"
-    fetch("https://newsdata.io/api/1/news?apikey="+api+"&language=en&category="+catagory+"&page="+page).then((response)=>{
+    fetch("https://newsdata.io/api/1/news?apikey="+api+"&language=en&category="+catagory).then((response)=>{
         return response.json();
     }).then((data)=>{
         console.log(data);
